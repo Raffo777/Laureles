@@ -1,0 +1,52 @@
+.header {
+    background-color: #0c5c5c;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-top: 0;
+  }
+  
+  .logo h1 {
+    font-size: 27px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    margin-right: 10px;
+    padding: 0;
+  }
+  
+  .nav-links ul li {
+    margin-left: 20px;
+  }
+  
+  .nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin-right: 16px;
+  }
+  
+  .nav-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .logo{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logo_foto{
+    height: 70px;
+    padding-left: 150px;
+  }
+  
+  
