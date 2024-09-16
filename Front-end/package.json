@@ -1,8 +1,8 @@
 {
+  "homepage": "https://Raffo777.github.io/Laureles",
   "name": "laureles-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Raffo777.github.io/Laureles",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

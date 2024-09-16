@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './components/header.js';
 import imagen from './img/imagen.png';
+import'./header.css';
 
 function App() {
   return (

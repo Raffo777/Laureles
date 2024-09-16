@@ -19,12 +19,13 @@ header {
 }
 
 
+
+
 .separacion{
   padding-top: 3%;
   background-color: #fff;
   height: 650px;
-  width: 104.4%;
-  margin-left: -40px;
+  width: 100%;
   background-image: url("./img/foto_fondo.jpg");
   background-size: cover; /* Para que la imagen cubra toda la pantalla */
   margin-top: -18px;
@@ -37,11 +38,11 @@ header {
   width:100%;
   background-image: url(data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgwLDEzMywxOTAsMC4xNSkiIGhlaWdodD0iODBweCIgd2lkdGg9IjgwcHgiIHZpZXdCb3g9IjAgMCA4MCA4MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw4VjBIOEE4LDgsMCwwLDEsMCw4Wk04MCw4VjBINzJBOCw4LDAsMCwwLDgwLDhaTTAsNzJ2OEg4QTgsOCwwLDAsMCwwLDcyWk00MCwzMmE4LDgsMCwxLDAsOCw4QTgsOCwwLDAsMCw0MCwzMlpNODAsNzJhOCw4LDAsMCwwLTgsOGg4WiIvPjwvc3ZnPg==);
   background-size: 10px auto;
-  padding:10px;
+  font-size: 20px;
 }
 
 .hola{
-  margin-top: 150%;
+  margin-top: 50%;
 }
 
 img{
@@ -52,7 +53,6 @@ img{
 
 
 body {
-  margin: 20px;
   background-size: cover; /* Para que la imagen cubra toda la pantalla */
   background-position: center;
   height: 96vh;
