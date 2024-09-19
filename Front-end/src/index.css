@@ -39,11 +39,80 @@ header {
   background-image: url(data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgwLDEzMywxOTAsMC4xNSkiIGhlaWdodD0iODBweCIgd2lkdGg9IjgwcHgiIHZpZXdCb3g9IjAgMCA4MCA4MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw4VjBIOEE4LDgsMCwwLDEsMCw4Wk04MCw4VjBINzJBOCw4LDAsMCwwLDgwLDhaTTAsNzJ2OEg4QTgsOCwwLDAsMCwwLDcyWk00MCwzMmE4LDgsMCwxLDAsOCw4QTgsOCwwLDAsMCw0MCwzMlpNODAsNzJhOCw4LDAsMCwwLTgsOGg4WiIvPjwvc3ZnPg==);
   background-size: 10px auto;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 
-.hola{
-  margin-top: 50%;
+.apartado_descanso {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #eaf0f6;
+  border-radius: 10px;
+  margin-top: 20px;
 }
+
+.caja_descanso {
+  flex: 1;
+  margin-left: 100px;
+  max-width: 400px;
+  padding-right: 20px;
+}
+
+.informacion_descanso h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.informacion_descanso p {
+  color: #34495e;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.tripadvisor-awards {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tripadvisor-awards img {
+  width: 50px;
+  height: auto;
+  margin-left: 60px;
+}
+
+.video_descanso {
+  position: relative;
+  flex: 1;
+}
+
+.imagen_cabana {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.play-button:hover {
+  color: #f39c12;
+}
+
+
+
 
 img{
   height: 50px;

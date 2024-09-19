@@ -47,6 +47,10 @@
   padding-left: 150px;
 }
 
+nav {
+  margin-right: 20px;
+}
+
 /* Estilos adicionales para el menú desplegable */
 .dropdown-content {
   position: absolute;
