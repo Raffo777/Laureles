@@ -15,9 +15,10 @@ function App() {
 
       <div className='info_medio'>
         <p>
-          Cabañas en Tandil – Nuestra ciudad es una excelente alternativa turística de vacaciones y mini turismo combinando la tranquilidad de las sierras con atractivos paseos y Turismo Aventura.
-          Contamos con una variada oferta de Cabañas y Alojamientos. El Alojamiento en Tandil es ventajoso ya que su estratégica ubicación en la Provincia de Buenos Aires facilita el desplazamiento hacia nuestra ciudad.
-          Tandil Cabañas – Alojarse en cabañas permite la continuación de nuestra habitual forma de vida en otro ámbito, encuentro con amigos y poder compartir gratos momentos, permite a nuestros niños estar en contacto con un medio natural distinto y a la vez, disfrutar del ambiente familiar. ¡LE DESEAMOS UNA FELÍZ ESTADÍA EN NUESTRA CIUDAD!
+        ¡Descubrí la magia de Laureles Holístico en San Miguel del Monte, Buenos Aires!
+        Te invito a descansar y disfrutar la naturaleza con nuestra propuesta de turismo rural sostenible, 
+        Laureles es un bosque situado a 100km de la ciudad de Buenos Aires, donde se preserva la flora y la fauna nativa.
+        Su compromiso con la naturaleza es profundo. Construyen con materiales naturales y gestionan de forma responsable, recursos como la electricidad (con paneles solares), el agua y los residuos de manera sostenible, compostando materia orgánica y separando/reutilizando todo lo posible.
         </p>
       </div>
 
@@ -25,8 +26,8 @@ function App() {
         <div className='caja_descanso'>
           <div className='informacion_descanso'>
             <h2 className='h2_descanaso'>MI DESCANSO EN LAURELES</h2>
-            <p>Complejo de 9 amplias cabañas en Tandil, Bs. As. - Argentina</p>
-            <p>Descanse en un lugar diferente a muy pocos kilómetros de Buenos Aires, donde el sonido de la naturaleza y el aire de las sierras se hacen presentes. Nuestro alojamiento en Tandil está compuesto por 5 amplias cabañas de dos dormitorios y 4 cálidas cabañas de un dormitorio.</p>
+            <p>Complejo con amplias cabañas en San miguel del monte, Bs. As. - Argentina</p>
+            <p>Descanse en un lugar diferente a muy pocos kilómetros de Buenos Aires, donde el sonido de la naturaleza y el aire limpio se hacen presentes. Nuestro alojamiento en Laureles está compuesto por x amplias cabañas con dormitorio y baño</p>
             <div className="tripadvisor-awards">
               <img src="tripadvisor-award1.png" alt="Premio Tripadvisor 1" />
               <img src="tripadvisor-award2.png" alt="Premio Tripadvisor 2" />
