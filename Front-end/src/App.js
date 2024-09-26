@@ -1,7 +1,8 @@
 import './App.css';
 import Header from './components/header.js';
-import imagen from './img/imagen.png';
+import imagen from './img/laureles_header.jpg';
 import './header.css';
+import videoFile from './components/videos/laureles.mp4';
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
 
         <div className='video_descanso'>
           <button className='play-button'>
-            
+            <video width="530" height="300" controls>
+              <source src={videoFile} type="video/mp4" />
+            </video>
             <i className="fa fa-play-circle"></i>
           </button>
         </div>

@@ -26,7 +26,7 @@ header {
   background-color: #fff;
   height: 650px;
   width: 100%;
-  background-image: url("./img/foto_fondo.jpg");
+  background-image: url("./img/laureles_header.jpg");
   background-size: cover; /* Para que la imagen cubra toda la pantalla */
   margin-top: -18px;
 }
@@ -84,6 +84,7 @@ header {
 }
 
 .video_descanso {
+  margin-top: 10px;
   position: relative;
   flex: 1;
 }
