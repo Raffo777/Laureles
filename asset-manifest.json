@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/Laureles/static/css/main.cf5ac218.css",
-    "main.js": "/Laureles/static/js/main.449e074b.js",
+    "main.css": "/Laureles/static/css/main.f78ddb13.css",
+    "main.js": "/Laureles/static/js/main.18062de0.js",
     "static/js/453.fd1a64ff.chunk.js": "/Laureles/static/js/453.fd1a64ff.chunk.js",
     "static/media/laureles.mp4": "/Laureles/static/media/laureles.ff4a4ec42de06cda8e4d.mp4",
+    "static/media/galeria_fotos1.jpg": "/Laureles/static/media/galeria_fotos1.bca576a768e1d07d6f3a.jpg",
     "static/media/laureles_header.jpg": "/Laureles/static/media/laureles_header.0e2de316c7ed01fe4398.jpg",
+    "static/media/galeria_fotos2.jpg": "/Laureles/static/media/galeria_fotos2.9f7ab5269db1622e72fc.jpg",
+    "static/media/galeria_fotos3.jpg": "/Laureles/static/media/galeria_fotos3.bcce4f693ff2cab7659e.jpg",
     "index.html": "/Laureles/index.html",
-    "main.cf5ac218.css.map": "/Laureles/static/css/main.cf5ac218.css.map",
-    "main.449e074b.js.map": "/Laureles/static/js/main.449e074b.js.map",
+    "main.f78ddb13.css.map": "/Laureles/static/css/main.f78ddb13.css.map",
+    "main.18062de0.js.map": "/Laureles/static/js/main.18062de0.js.map",
     "453.fd1a64ff.chunk.js.map": "/Laureles/static/js/453.fd1a64ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf5ac218.css",
-    "static/js/main.449e074b.js"
+    "static/css/main.f78ddb13.css",
+    "static/js/main.18062de0.js"
   ]
 }
