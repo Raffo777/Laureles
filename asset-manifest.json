@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Laureles/static/css/main.f78ddb13.css",
+    "main.css": "/Laureles/static/css/main.2c7d3a1c.css",
     "main.js": "/Laureles/static/js/main.18062de0.js",
     "static/js/453.fd1a64ff.chunk.js": "/Laureles/static/js/453.fd1a64ff.chunk.js",
     "static/media/laureles.mp4": "/Laureles/static/media/laureles.ff4a4ec42de06cda8e4d.mp4",
@@ -9,12 +9,12 @@
     "static/media/galeria_fotos2.jpg": "/Laureles/static/media/galeria_fotos2.9f7ab5269db1622e72fc.jpg",
     "static/media/galeria_fotos3.jpg": "/Laureles/static/media/galeria_fotos3.bcce4f693ff2cab7659e.jpg",
     "index.html": "/Laureles/index.html",
-    "main.f78ddb13.css.map": "/Laureles/static/css/main.f78ddb13.css.map",
+    "main.2c7d3a1c.css.map": "/Laureles/static/css/main.2c7d3a1c.css.map",
     "main.18062de0.js.map": "/Laureles/static/js/main.18062de0.js.map",
     "453.fd1a64ff.chunk.js.map": "/Laureles/static/js/453.fd1a64ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f78ddb13.css",
+    "static/css/main.2c7d3a1c.css",
     "static/js/main.18062de0.js"
   ]
 }
