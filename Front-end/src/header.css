@@ -1,73 +1,48 @@
-.header {
-  background-color: #0c5c5c;
-  opacity: 0.8;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  padding-top: 0;
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo translúcido inicial */
+  transition: background-color 0.3s; /* Transición suave al hacer scroll */
 }
 
-.logo h1 {
-  font-size: 27px;
-  font-family: 'Arial', sans-serif;
-  color: white;
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al hacer scroll */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra al hacer scroll */
 }
 
-.nav-links ul {
-  list-style: none;
-  display: flex;
-  margin-right: 10px;
-  padding: 0;
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0 15px; /* Espaciado entre enlaces */
+  transition: color 0.3s, transform 0.2s; /* Transición suave para color y tamaño */
 }
 
-.nav-links ul li {
-  margin-left: 20px;
+/* Efecto al pasar el cursor en los enlaces principales del header */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #007bff; /* Color al hacer hover */
+  transform: scale(1.05); /* Aumenta un poco el tamaño */
 }
 
-.nav-links ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-family: 'Arial', sans-serif;
-  margin-right: 16px;
+/* Estilos del menú desplegable */
+.navbar .dropdown-menu {
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 0; /* Sin padding en la lista */
 }
 
-.nav-links ul li a:hover {
-  text-decoration: underline;
+/* Estilo para cada opción del menú */
+.navbar .dropdown-menu .dropdown-item {
+  padding: 10px 20px; /* Espaciado interno */
+  color: #333; /* Color del texto */
+  font-weight: 500; /* Peso del texto */
+  transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Transición suave */
 }
 
-.logo {
-  display: flex;
-  justify-content: space-around;
-}
-
-.logo_foto {
-  height: 70px;
-  padding-left: 150px;
-}
-
-nav {
-  margin-right: 20px;
-}
-
-/* Estilos adicionales para el menú desplegable */
-.dropdown-content {
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 11px;
-  text-decoration: none;
-  display: block;
-  width: 80px;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+/* Efecto al pasar el cursor en las opciones del menú desplegable */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0; /* Color de fondo al hacer hover */
+  color: #007bff; /* Color del texto al hacer hover */
+  transform: scale(1.02); /* Aumenta un poco el tamaño */
 }
