@@ -1,81 +1,58 @@
 import React, { useEffect, useState } from 'react';
-import '../header.css'; // Archivo CSS para estilos personalizados
-import logo from '../img/logo_header.png'; // Asegúrate de poner la ruta correcta de tu logo
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import '../header.css'; // Asegúrate de que la ruta sea correcta
+import logo from '../img/logo_header.png'; // Asegúrate de que la ruta del logo sea correcta
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-    // Manejar el cambio de estado del dropdown
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    };
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 50;
+            const isScrolled = window.scrollY > 50; // Cambia este valor si necesitas un umbral diferente
             setScrolled(isScrolled);
         };
 
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     return (
-        <nav className={`navbar navbar-expand-lg navbar-dark fixed-top ${scrolled ? "scrolled" : ""}`}>
+        <Navbar 
+            bg={scrolled ? "transparent-dark" :"dark-black"} // Cambia el fondo si está scrolled
+            variant="dark" 
+            expand="lg" 
+            fixed="top" 
+            className={`navbar ${scrolled ? "scrolled" : ""}`}
+        >
             <div className="container">
-                <a className="navbar-brand" href="#">
+                <Navbar.Brand href="#">
                     <img src={logo} alt="Laureles Holístico" height="40" />
-                </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#inicio">Inicio</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#cabanas">Cabañas disponibles</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#ubicacion">Ubicación</a>
-                        </li>
-                        
-                        {/* Dropdown de Servicios */}
-                        <li className="nav-item dropdown">
-                            <a 
-                                href="#"
-                                className="nav-link dropdown-toggle" 
-                                onClick={toggleDropdown}
-                            >
-                                Servicios
-                            </a>
-                            {isDropdownOpen && (
-                                <ul className="dropdown-menu show">
-                                    <li><a className="dropdown-item" href="#alojamientos">Alojamientos</a></li>
-                                    <li><a className="dropdown-item" href="#atractivos">Atractivos</a></li>
-                                    <li><a className="dropdown-item" href="#gastronomia">Gastronomía</a></li>
-                                    <li><a className="dropdown-item" href="#guias">Guías Turísticos</a></li>
-                                    <li><a className="dropdown-item" href="#espacios">Espacios Recreativos</a></li>
-                                    <li><a className="dropdown-item" href="#eventos">Agenda de Eventos</a></li>
-                                    <li><a className="dropdown-item" href="#excursiones">Excursiones</a></li>
-                                    <li><a className="dropdown-item" href="#productores">Productores Locales</a></li>
-                                    <li><a className="dropdown-item" href="#todos">Todos los servicios</a></li>
-                                </ul>
-                            )}
-                        </li>
-                        
-                        <li className="nav-item">
-                            <a className="nav-link" href="#iniciarSesion">Iniciar sesión</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#registrarse">Registrarse</a>
-                        </li>
-                    </ul>
-                </div>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarNav" />
+                <Navbar.Collapse id="navbarNav">
+                    <Nav className="ml-auto">
+                        <Nav.Link href="#inicio">Inicio</Nav.Link>
+                        <Nav.Link href="#cabanas">Cabañas disponibles</Nav.Link>
+                        <Nav.Link href="#ubicacion">Ubicación</Nav.Link>
+                        <NavDropdown title="Servicios" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#alojamientos">Alojamientos</NavDropdown.Item>
+                            <NavDropdown.Item href="#atractivos">Atractivos</NavDropdown.Item>
+                            <NavDropdown.Item href="#gastronomia">Gastronomía</NavDropdown.Item>
+                            <NavDropdown.Item href="#guias">Guías Turísticos</NavDropdown.Item>
+                            <NavDropdown.Item href="#espacios">Espacios Recreativos</NavDropdown.Item>
+                            <NavDropdown.Item href="#eventos">Agenda de Eventos</NavDropdown.Item>
+                            <NavDropdown.Item href="#excursiones">Excursiones</NavDropdown.Item>
+                            <NavDropdown.Item href="#productores">Productores Locales</NavDropdown.Item>
+                            <NavDropdown.Item href="#todos">Todos los servicios</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="#iniciarSesion">Iniciar sesión</Nav.Link>
+                        <Nav.Link href="#registrarse">Registrarse</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
             </div>
-        </nav>
+        </Navbar>
     );
 };
 

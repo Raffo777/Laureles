@@ -17,7 +17,6 @@
   transition: color 0.3s, transform 0.2s; /* Transición suave para color y tamaño */
 }
 
-/* Efecto al pasar el cursor en los enlaces principales del header */
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #007bff; /* Color al hacer hover */
   transform: scale(1.05); /* Aumenta un poco el tamaño */
@@ -32,7 +31,6 @@
   padding: 0; /* Sin padding en la lista */
 }
 
-/* Estilo para cada opción del menú */
 .navbar .dropdown-menu .dropdown-item {
   padding: 10px 20px; /* Espaciado interno */
   color: #333; /* Color del texto */
@@ -40,9 +38,21 @@
   transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Transición suave */
 }
 
-/* Efecto al pasar el cursor en las opciones del menú desplegable */
 .navbar .dropdown-menu .dropdown-item:hover {
   background-color: #f0f0f0; /* Color de fondo al hacer hover */
   color: #007bff; /* Color del texto al hacer hover */
   transform: scale(1.02); /* Aumenta un poco el tamaño */
 }
+
+.ml-auto {
+  margin-left: auto; /* Para alinear los elementos a la derecha */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 1000px) {
+  .ml-auto {
+      margin-left: 0; /* Eliminar margen en pantallas pequeñas */
+  }
+}
+
+
