@@ -1,0 +1,115 @@
+/* Centra el login en la pantalla */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px); /* Ajusta esto según la altura de tu header y footer */
+    background-color: #f0f0f0; /* Cambia esto si tienes un color de fondo específico */
+    padding-top: 80px; /* Espacio para el header */
+    padding-bottom: 80px; /* Espacio para el footer */
+}
+
+/* Estilos generales del contenedor de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.login-box {
+    display: flex;
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la parte izquierda del formulario */
+.login-left {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.login-left label {
+    font-size: 14px;
+    color: #555;
+}
+
+.login-left input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-left button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-left button:hover {
+    background-color: #555;
+}
+
+.login-left .signup-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.login-left .signup-link a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-left .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de la parte derecha del mensaje de bienvenida */
+.login-right {
+    flex: 1;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-right h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.login-right p {
+    font-size: 14px;
+    text-align: center;
+}

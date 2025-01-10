@@ -1,15 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import '../header.css'; // Asegúrate de que la ruta sea correcta
-import logo from '../img/logo_header.png'; // Asegúrate de que la ruta del logo sea correcta
+import '../header.css'; 
+import logo from '../img/logo_header.png'; 
 
-const Header = () => {
+const Header = ({ onLoginClick }) => {
     const [scrolled, setScrolled] = useState(false);
+    const [scrollDirection, setScrollDirection] = useState("up");
 
     useEffect(() => {
+        let lastScrollTop = 0;
+
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 50; // Cambia este valor si necesitas un umbral diferente
+            const scrollTop = window.scrollY;
+            const isScrolled = scrollTop > 50;
+
+            // Detectar dirección del scroll
+            if (scrollTop > lastScrollTop) {
+                setScrollDirection("down");
+            } else {
+                setScrollDirection("up");
+            }
+
             setScrolled(isScrolled);
+            lastScrollTop = scrollTop;
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -20,11 +33,11 @@ const Header = () => {
 
     return (
         <Navbar 
-            bg={scrolled ? "transparent-dark" :"dark-black"} // Cambia el fondo si está scrolled
+            bg={scrolled ? "transparent-dark" : "dark-black"} 
             variant="dark" 
             expand="lg" 
             fixed="top" 
-            className={`navbar ${scrolled ? "scrolled" : ""}`}
+            className={`navbar ${scrolled ? "scrolled" : ""} ${scrollDirection === "up" ? "expand" : "shrink"}`}
         >
             <div className="container">
                 <Navbar.Brand href="#">
@@ -47,7 +60,7 @@ const Header = () => {
                             <NavDropdown.Item href="#productores">Productores Locales</NavDropdown.Item>
                             <NavDropdown.Item href="#todos">Todos los servicios</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#iniciarSesion">Iniciar sesión</Nav.Link>
+                        <Nav.Link href="#iniciarSesion" onClick={onLoginClick}>Iniciar sesión</Nav.Link> {/* Agregamos onClick */}
                         <Nav.Link href="#registrarse">Registrarse</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

@@ -4,6 +4,10 @@
   transition: background-color 0.3s; /* Transición suave al hacer scroll */
 }
 
+img{
+  height: 55px;
+}
+
 .navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al hacer scroll */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra al hacer scroll */
@@ -16,9 +20,19 @@
   padding: 0 15px; /* Espaciado entre enlaces */
   transition: color 0.3s, transform 0.2s; /* Transición suave para color y tamaño */
 }
+.navbar.expand {
+  padding: 1.5rem 1rem; /* Tamaño más grande al hacer scroll hacia arriba */
+  transition: padding 0.3s;
+}
+
+.navbar.shrink {
+  padding: 0.5rem 1rem; /* Tamaño más pequeño al hacer scroll hacia abajo */
+  transition: padding 0.3s;
+}
+
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #007bff; /* Color al hacer hover */
+  color: green; /* Color al hacer hover */
   transform: scale(1.05); /* Aumenta un poco el tamaño */
 }
 
@@ -40,7 +54,7 @@
 
 .navbar .dropdown-menu .dropdown-item:hover {
   background-color: #f0f0f0; /* Color de fondo al hacer hover */
-  color: #007bff; /* Color del texto al hacer hover */
+  color: green; /* Color del texto al hacer hover */
   transform: scale(1.02); /* Aumenta un poco el tamaño */
 }
 
