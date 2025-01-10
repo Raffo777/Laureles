@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/Laureles/static/css/main.2c7d3a1c.css",
-    "main.js": "/Laureles/static/js/main.18062de0.js",
+    "main.css": "/Laureles/static/css/main.f1e89794.css",
+    "main.js": "/Laureles/static/js/main.1e681af5.js",
     "static/js/453.fd1a64ff.chunk.js": "/Laureles/static/js/453.fd1a64ff.chunk.js",
     "static/media/laureles.mp4": "/Laureles/static/media/laureles.ff4a4ec42de06cda8e4d.mp4",
     "static/media/galeria_fotos1.jpg": "/Laureles/static/media/galeria_fotos1.bca576a768e1d07d6f3a.jpg",
     "static/media/laureles_header.jpg": "/Laureles/static/media/laureles_header.0e2de316c7ed01fe4398.jpg",
+    "static/media/cabaña_principal.png": "/Laureles/static/media/cabaña_principal.a533c56773a2eb8fa525.png",
     "static/media/galeria_fotos2.jpg": "/Laureles/static/media/galeria_fotos2.9f7ab5269db1622e72fc.jpg",
+    "static/media/eventos.jpg": "/Laureles/static/media/eventos.31fcb668781f2f77f0ad.jpg",
+    "static/media/fiestas.jpg": "/Laureles/static/media/fiestas.eff72fedfd75f6afb677.jpg",
     "static/media/galeria_fotos3.jpg": "/Laureles/static/media/galeria_fotos3.bcce4f693ff2cab7659e.jpg",
+    "static/media/lago.jpg": "/Laureles/static/media/lago.33aa7ba49046bb571436.jpg",
+    "static/media/miel.jpg": "/Laureles/static/media/miel.4709e62fc3d403b6e4e5.jpg",
     "index.html": "/Laureles/index.html",
-    "main.2c7d3a1c.css.map": "/Laureles/static/css/main.2c7d3a1c.css.map",
-    "main.18062de0.js.map": "/Laureles/static/js/main.18062de0.js.map",
+    "main.f1e89794.css.map": "/Laureles/static/css/main.f1e89794.css.map",
+    "main.1e681af5.js.map": "/Laureles/static/js/main.1e681af5.js.map",
     "453.fd1a64ff.chunk.js.map": "/Laureles/static/js/453.fd1a64ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c7d3a1c.css",
-    "static/js/main.18062de0.js"
+    "static/css/main.f1e89794.css",
+    "static/js/main.1e681af5.js"
   ]
 }
